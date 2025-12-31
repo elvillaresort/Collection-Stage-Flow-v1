@@ -1,0 +1,79 @@
+@keyframes wave-animation {
+  0% {
+    transform: scaleY(0.5);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scaleY(1.2);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scaleY(0.5);
+    opacity: 0.5;
+  }
+}
+
+.animate-wave {
+  animation: wave-animation 1.5s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 20s linear infinite;
+}
+
+@keyframes gradient-x {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 15s ease infinite;
+}
+
+.efficiency-bar {
+  width: var(--efficiency-width);
+}
+
+.progress-bar {
+  width: var(--progress);
+}
+
+.wave-bar {
+  height: var(--wave-height);
+  animation-delay: var(--wave-delay);
+}

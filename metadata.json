@@ -1,0 +1,9 @@
+{
+  "name": "Personal Copy PCCS Collection Stage Flow - Advanced Debt Recovery Suite",
+  "description": "A comprehensive end-to-end debt collection management platform, featuring AI-driven strategies, omnichannel communications, legal workflow tracking, and deep portfolio analytics.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
